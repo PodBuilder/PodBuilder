@@ -32,6 +32,7 @@
 		1F0EBAFF18EF40A000C62194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1F0EBB0118EF40A000C62194 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F0EBB0818EF40A000C62194 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1F0EBB1D18EF41D100C62194 /* PodBuilder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PodBuilder.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +99,7 @@
 		1F0EBAED18EF40A000C62194 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F0EBB1D18EF41D100C62194 /* PodBuilder.entitlements */,
 				1F0EBB0118EF40A000C62194 /* Images.xcassets */,
 				1F0EBAEE18EF40A000C62194 /* PodBuilder-Info.plist */,
 				1F0EBAEF18EF40A000C62194 /* InfoPlist.strings */,
@@ -136,6 +138,15 @@
 				CLASSPREFIX = Pod;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "William Kent";
+				TargetAttributes = {
+					1F0EBAE218EF40A000C62194 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 1F0EBADE18EF40A000C62194 /* Build configuration list for PBXProject "PodBuilder" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -283,6 +294,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PodBuilder/PodBuilder.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PodBuilder/PodBuilder-Prefix.pch";
@@ -296,6 +309,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PodBuilder/PodBuilder.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PodBuilder/PodBuilder-Prefix.pch";
