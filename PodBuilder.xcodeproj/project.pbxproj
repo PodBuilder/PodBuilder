@@ -90,8 +90,8 @@
 		1F0EBAEC18EF40A000C62194 /* PodBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				1FF44CD418EF5210007172AA /* Application */,
 				1FF44CCE18EF5132007172AA /* Document */,
-				1F0EBAFE18EF40A000C62194 /* MainMenu.xib */,
 				1F0EBAED18EF40A000C62194 /* Supporting Files */,
 			);
 			path = PodBuilder;
@@ -120,6 +120,14 @@
 				1F0EBAFB18EF40A000C62194 /* PodDocument.xib */,
 			);
 			name = Document;
+			sourceTree = "<group>";
+		};
+		1FF44CD418EF5210007172AA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1F0EBAFE18EF40A000C62194 /* MainMenu.xib */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
