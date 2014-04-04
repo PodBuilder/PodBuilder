@@ -10,7 +10,6 @@
 		1F0EBAE718EF40A000C62194 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0EBAE618EF40A000C62194 /* Cocoa.framework */; };
 		1F0EBAF118EF40A000C62194 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAEF18EF40A000C62194 /* InfoPlist.strings */; };
 		1F0EBAF318EF40A000C62194 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EBAF218EF40A000C62194 /* main.m */; };
-		1F0EBAF718EF40A000C62194 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAF518EF40A000C62194 /* Credits.rtf */; };
 		1F0EBAFA18EF40A000C62194 /* PodDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EBAF918EF40A000C62194 /* PodDocument.m */; };
 		1F0EBAFD18EF40A000C62194 /* PodDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAFB18EF40A000C62194 /* PodDocument.xib */; };
 		1F0EBB0018EF40A000C62194 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAFE18EF40A000C62194 /* MainMenu.xib */; };
@@ -27,7 +26,6 @@
 		1F0EBAF018EF40A000C62194 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F0EBAF218EF40A000C62194 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F0EBAF418EF40A000C62194 /* PodBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PodBuilder-Prefix.pch"; sourceTree = "<group>"; };
-		1F0EBAF618EF40A000C62194 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		1F0EBAF818EF40A000C62194 /* PodDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodDocument.h; sourceTree = "<group>"; };
 		1F0EBAF918EF40A000C62194 /* PodDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodDocument.m; sourceTree = "<group>"; };
 		1F0EBAFC18EF40A000C62194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PodDocument.xib; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 				1F0EBAF918EF40A000C62194 /* PodDocument.m */,
 				1F0EBAFB18EF40A000C62194 /* PodDocument.xib */,
 				1F0EBAFE18EF40A000C62194 /* MainMenu.xib */,
-				1F0EBB0118EF40A000C62194 /* Images.xcassets */,
 				1F0EBAED18EF40A000C62194 /* Supporting Files */,
 			);
 			path = PodBuilder;
@@ -101,11 +98,11 @@
 		1F0EBAED18EF40A000C62194 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F0EBB0118EF40A000C62194 /* Images.xcassets */,
 				1F0EBAEE18EF40A000C62194 /* PodBuilder-Info.plist */,
 				1F0EBAEF18EF40A000C62194 /* InfoPlist.strings */,
 				1F0EBAF218EF40A000C62194 /* main.m */,
 				1F0EBAF418EF40A000C62194 /* PodBuilder-Prefix.pch */,
-				1F0EBAF518EF40A000C62194 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,7 +162,6 @@
 			files = (
 				1F0EBAF118EF40A000C62194 /* InfoPlist.strings in Resources */,
 				1F0EBB0218EF40A000C62194 /* Images.xcassets in Resources */,
-				1F0EBAF718EF40A000C62194 /* Credits.rtf in Resources */,
 				1F0EBAFD18EF40A000C62194 /* PodDocument.xib in Resources */,
 				1F0EBB0018EF40A000C62194 /* MainMenu.xib in Resources */,
 			);
@@ -192,14 +188,6 @@
 				1F0EBAF018EF40A000C62194 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1F0EBAF518EF40A000C62194 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F0EBAF618EF40A000C62194 /* en */,
-			);
-			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 		1F0EBAFB18EF40A000C62194 /* PodDocument.xib */ = {
