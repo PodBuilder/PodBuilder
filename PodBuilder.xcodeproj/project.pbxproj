@@ -14,6 +14,7 @@
 		1F0EBAFD18EF40A000C62194 /* PodDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAFB18EF40A000C62194 /* PodDocument.xib */; };
 		1F0EBB0018EF40A000C62194 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAFE18EF40A000C62194 /* MainMenu.xib */; };
 		1F0EBB0218EF40A000C62194 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBB0118EF40A000C62194 /* Images.xcassets */; };
+		1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		1F0EBB0118EF40A000C62194 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F0EBB0818EF40A000C62194 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1F0EBB1D18EF41D100C62194 /* PodBuilder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PodBuilder.entitlements; sourceTree = "<group>"; };
+		1FF44CCF18EF516C007172AA /* PodDocumentWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodDocumentWindowController.h; sourceTree = "<group>"; };
+		1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodDocumentWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +90,7 @@
 		1F0EBAEC18EF40A000C62194 /* PodBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				1F0EBAF818EF40A000C62194 /* PodDocument.h */,
-				1F0EBAF918EF40A000C62194 /* PodDocument.m */,
-				1F0EBAFB18EF40A000C62194 /* PodDocument.xib */,
+				1FF44CCE18EF5132007172AA /* Document */,
 				1F0EBAFE18EF40A000C62194 /* MainMenu.xib */,
 				1F0EBAED18EF40A000C62194 /* Supporting Files */,
 			);
@@ -107,6 +108,18 @@
 				1F0EBAF418EF40A000C62194 /* PodBuilder-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FF44CCE18EF5132007172AA /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				1F0EBAF818EF40A000C62194 /* PodDocument.h */,
+				1F0EBAF918EF40A000C62194 /* PodDocument.m */,
+				1FF44CCF18EF516C007172AA /* PodDocumentWindowController.h */,
+				1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */,
+				1F0EBAFB18EF40A000C62194 /* PodDocument.xib */,
+			);
+			name = Document;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +200,7 @@
 			files = (
 				1F0EBAFA18EF40A000C62194 /* PodDocument.m in Sources */,
 				1F0EBAF318EF40A000C62194 /* main.m in Sources */,
+				1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +353,7 @@
 				1F0EBB1918EF40A000C62194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
