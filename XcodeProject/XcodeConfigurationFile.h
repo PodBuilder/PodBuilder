@@ -29,4 +29,7 @@
 @property (readonly) NSMutableSet *otherLibraries;
 @property (readonly) NSMutableArray *includedFiles;
 
+- (NSDictionary *)configurationDictionary;
+- (NSString *)configurationFileSource;
+
 @end

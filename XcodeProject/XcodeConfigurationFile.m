@@ -7,6 +7,8 @@
 //
 
 #import "XcodeConfigurationFile.h"
+#import "NSDictionary+MapFoldReduce.h"
+#import "NSArray+MapFoldReduce.h"
 
 @implementation XcodeConfigurationFile
 
@@ -63,6 +65,52 @@
 }
 
 #pragma mark Properties
+
+- (NSDictionary *)configurationDictionary {
+    NSMutableDictionary *settings = [self.attributes copy];
+    NSMutableString *flags = settings[@"OTHER_LDFLAGS"] ?: @"";
+    flags = [[flags stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] mutableCopy];
+    
+    [flags appendString:[self.otherLibraries.allObjects reduceWithInitialValue:[NSMutableString string] block:^(id reduced, id value) {
+        [reduced appendFormat:@" -l%@", value];
+    }]];
+    
+    [flags appendString:[self.frameworks.allObjects reduceWithInitialValue:[NSMutableString string] block:^(id reduced, id value) {
+        [reduced appendFormat:@" -framework %@", value];
+    }]];
+    
+    [flags appendString:[self.weakLinkedFrameworks.allObjects reduceWithInitialValue:[NSMutableString string] block:^(id reduced, id value) {
+        [reduced appendFormat:@" -weak_framework %@", value];
+    }]];
+    
+    NSString *finalFlags = [flags stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    if (finalFlags.length != 0) settings[@"OTHER_LDFLAGS"] = finalFlags;
+    else [settings removeObjectForKey:@"OTHER_LDFLAGS"];
+    
+    return settings;
+}
+
+- (NSString *)configurationFileSource {
+    NSArray *includeLines = [self.includedFiles arrayByTranslatingValues:^id(id oldValue) {
+        NSString *pathWithExtension = oldValue;
+        if (![pathWithExtension.pathExtension isEqualToString:@"xcconfig"])
+            pathWithExtension = [NSString stringWithFormat:@"%@.xcconfig", pathWithExtension];
+
+        return [NSString stringWithFormat:@"#include \"%@\"", pathWithExtension];
+    }];
+    
+    NSArray *settingLines = [[self configurationDictionary] arrayByTranslatingKeyValuePairsWithBlock:^id(id key, id value) {
+        return [NSString stringWithFormat:@"%@ = %@", key, value];
+    }];
+    
+    // Write out the #include lines, a blank line (for aesthetic purposes), and then the setting lines.
+    NSMutableArray *lines = [NSMutableArray array];
+    [lines addObjectsFromArray:includeLines];
+    [lines addObject:@""];
+    [lines addObjectsFromArray:settingLines];
+    
+    return [lines componentsJoinedByString:@"\n"];
+}
 
 #pragma mark Private Methods
 
