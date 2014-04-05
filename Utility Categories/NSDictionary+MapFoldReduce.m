@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 William Kent. All rights reserved.
 //
 
-#import "NSDictionary+Map.h"
+#import "NSDictionary+MapFoldReduce.h"
 
-@implementation NSDictionary (Map)
+@implementation NSDictionary (MapFoldReduce)
 
 - (NSArray *)arrayByTranslatingKeyValuePairsWithBlock:(id (^)(id key, id value))block {
     NSAssert(block != NULL, @"Block must not be NULL");

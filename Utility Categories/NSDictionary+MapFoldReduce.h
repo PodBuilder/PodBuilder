@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (Map)
+@interface NSDictionary (MapFoldReduce)
 
 - (NSArray *)arrayByTranslatingKeyValuePairsWithBlock:(id (^)(id key, id value))block;
 

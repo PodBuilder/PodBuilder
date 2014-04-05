@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 William Kent. All rights reserved.
 //
 
-#import "NSArray+Map.h"
+#import "NSArray+MapFoldReduce.h"
 
-@implementation NSArray (Map)
+@implementation NSArray (MapFoldReduce)
 
 - (NSArray *)arrayByTranslatingValues:(id (^)(id oldValue))block {
     NSAssert(block != NULL, @"Block must not be NULL");

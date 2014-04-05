@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (Map)
+@interface NSArray (MapFoldReduce)
 
 - (NSArray *)arrayByTranslatingValues:(id (^)(id oldValue))block;
 
