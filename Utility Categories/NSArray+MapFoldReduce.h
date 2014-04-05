@@ -11,5 +11,6 @@
 @interface NSArray (MapFoldReduce)
 
 - (NSArray *)arrayByTranslatingValues:(id (^)(id oldValue))block;
+- (id)reduceWithInitialValue:(id)initialValue block:(void (^)(id reduced, id value))block;
 
 @end

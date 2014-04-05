@@ -23,4 +23,17 @@
     return retval;
 }
 
+- (id)reduceWithInitialValue:(id)initialValue block:(void (^)(id reduced, id value))block {
+    NSAssert(block != NULL, @"Block must not be NULL");
+    
+    id reduced = initialValue;
+    NSInteger count = self.count;
+    
+    for (NSInteger i = 0; i < count; i++) {
+        block(reduced, self[i]);
+    }
+    
+    return reduced;
+}
+
 @end
