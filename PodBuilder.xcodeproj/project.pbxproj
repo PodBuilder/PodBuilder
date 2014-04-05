@@ -15,6 +15,7 @@
 		1F0EBB0018EF40A000C62194 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAFE18EF40A000C62194 /* MainMenu.xib */; };
 		1F0EBB0218EF40A000C62194 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBB0118EF40A000C62194 /* Images.xcassets */; };
 		1F4A9BF918F0B4FC00852EC5 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BF818F0B4FC00852EC5 /* NSArray+Map.m */; };
+		1F4A9BFC18F0B65700852EC5 /* NSDictionary+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BFB18F0B65700852EC5 /* NSDictionary+Map.m */; };
 		1FC694B618F08AEA005D77B1 /* XcodeConfigurationFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC694B518F08AEA005D77B1 /* XcodeConfigurationFile.m */; };
 		1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,8 @@
 		1F0EBB1D18EF41D100C62194 /* PodBuilder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PodBuilder.entitlements; sourceTree = "<group>"; };
 		1F4A9BF718F0B4FC00852EC5 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
 		1F4A9BF818F0B4FC00852EC5 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
+		1F4A9BFA18F0B65700852EC5 /* NSDictionary+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Map.h"; sourceTree = "<group>"; };
+		1F4A9BFB18F0B65700852EC5 /* NSDictionary+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Map.m"; sourceTree = "<group>"; };
 		1FC694B418F08AEA005D77B1 /* XcodeConfigurationFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeConfigurationFile.h; sourceTree = "<group>"; };
 		1FC694B518F08AEA005D77B1 /* XcodeConfigurationFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeConfigurationFile.m; sourceTree = "<group>"; };
 		1FF44CCF18EF516C007172AA /* PodDocumentWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodDocumentWindowController.h; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 			children = (
 				1F4A9BF718F0B4FC00852EC5 /* NSArray+Map.h */,
 				1F4A9BF818F0B4FC00852EC5 /* NSArray+Map.m */,
+				1F4A9BFA18F0B65700852EC5 /* NSDictionary+Map.h */,
+				1F4A9BFB18F0B65700852EC5 /* NSDictionary+Map.m */,
 			);
 			path = "Utility Categories";
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F4A9BF918F0B4FC00852EC5 /* NSArray+Map.m in Sources */,
+				1F4A9BFC18F0B65700852EC5 /* NSDictionary+Map.m in Sources */,
 				1F0EBAFA18EF40A000C62194 /* PodDocument.m in Sources */,
 				1F0EBAF318EF40A000C62194 /* main.m in Sources */,
 				1FC694B618F08AEA005D77B1 /* XcodeConfigurationFile.m in Sources */,
