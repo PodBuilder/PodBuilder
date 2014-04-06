@@ -65,6 +65,44 @@
     return [self initByParsingData:[NSData dataWithContentsOfURL:location]];
 }
 
+- (id)initWithConfigurationDictionary:(NSDictionary *)settings {
+    self = [self init];
+    
+    NSString *flagString = settings[@"OTHER_LDFLAGS"] ?: @"";
+    flagString = [[flagString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] mutableCopy];
+    
+    NSArray *flags = [flagString componentsSplitUsingShellQuotingRules];
+    NSMutableArray *fixedFlags = [NSMutableArray array];
+    
+    NSInteger count = flags.count;
+    for (NSInteger i = 0; i < count; i++) {
+        NSString *flag = flags[i];
+        
+        if ([flag hasPrefix:@"-l"]) {
+            [self.otherLibraries addObject:[flag substringFromIndex:2]];
+        } else if ([flag hasPrefix:@"-framework"]) {
+            NSInteger offset = [@"-framework" length] + 1;
+            [self.frameworks addObject:[flag substringFromIndex:offset]];
+        } else if ([flag hasPrefix:@"-weak_framework"]) {
+            NSInteger offset = [@"-weak_framework" length] + 1;
+            [self.weakLinkedFrameworks addObject:[flag substringFromIndex:offset]];
+        } else {
+            NSRange range = [flag rangeOfCharacterFromSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+            if (!(range.location == NSNotFound && range.length == 0)) {
+                [fixedFlags addObject:[NSString stringWithFormat:@"\"%@\"", flag]];
+            } else {
+                [fixedFlags addObject:flag];
+            }
+        }
+    }
+    
+    _attributes = [settings mutableCopy];
+    if (fixedFlags.count != 0) self.attributes[@"OTHER_LDFLAGS"] = [fixedFlags componentsJoinedByString:@" "];
+    else [self.attributes removeObjectForKey:@"OTHER_LDFLAGS"];
+    
+    return self;
+}
+
 #pragma mark Properties
 
 - (NSDictionary *)configurationDictionary {
@@ -176,6 +214,12 @@
     if (value != NULL) *value = [line substringWithRange:range];
     
     return YES;
+}
+
+#pragma mark NSCopying
+
+- (instancetype)copyWithZone:(NSZone *)zone {
+    return [[[self class] allocWithZone:zone] initWithConfigurationDictionary:[self.configurationDictionary copy]];
 }
 
 @end

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XcodeConfigurationFile : NSObject
+@interface XcodeConfigurationFile : NSObject <NSCopying>
 
 /// Creates an instance of \c XcodeConfigurationFile containing no settings.
 /// \remarks This is a designated initializer.
@@ -20,6 +20,7 @@
 - (id)initByParsingData:(NSData *)data;
 /// Creates an instance of \c XcodeConfigurationFile containing settings obtained from reading from the given URL.
 - (id)initByReadingURL:(NSURL *)location;
+- (id)initWithConfigurationDictionary:(NSDictionary *)settings;
 
 #pragma mark Properties
 
