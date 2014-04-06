@@ -222,4 +222,25 @@
     return [[[self class] allocWithZone:zone] initWithConfigurationDictionary:[self.configurationDictionary copy]];
 }
 
+#pragma mark NSObject
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"<%@ %p: %@>", NSStringFromClass([self class]), self, self.configurationDictionary];
+}
+
+- (BOOL)isEqual:(id)object {
+    if (self == object) return YES;
+    if (![object isKindOfClass:[self class]]) return NO;
+    
+    XcodeConfigurationFile *other = object;
+    return ([self.attributes isEqual:other.attributes] &&
+            [self.frameworks isEqual:other.frameworks] &&
+            [self.weakLinkedFrameworks isEqual:other.frameworks] &&
+            [self.otherLibraries isEqual:other.otherLibraries]);
+}
+
+- (NSUInteger)hash {
+    return self.attributes.hash ^ self.frameworks.hash ^ self.weakLinkedFrameworks.hash ^ self.otherLibraries.hash;
+}
+
 @end
