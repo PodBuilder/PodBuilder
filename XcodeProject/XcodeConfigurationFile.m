@@ -9,6 +9,7 @@
 #import "XcodeConfigurationFile.h"
 #import "NSDictionary+MapFoldReduce.h"
 #import "NSArray+MapFoldReduce.h"
+#import "NSString+ShellSplit.h"
 
 @implementation XcodeConfigurationFile
 
@@ -110,6 +111,21 @@
     [lines addObjectsFromArray:settingLines];
     
     return [lines componentsJoinedByString:@"\n"];
+}
+
+- (void)mergeConfiguration:(XcodeConfigurationFile *)other {
+    for (NSString *key in other.attributes.allKeys) {
+        NSString *oldValue = [self.attributes[key] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        NSString *newValue = [other.attributes[key] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        
+        NSArray *existing = [oldValue componentsSplitUsingShellQuotingRules];
+        if ([existing containsObject:newValue]) self.attributes[key] = oldValue;
+        else self.attributes[key] = [NSString stringWithFormat:@"%@ %@", oldValue, newValue];
+    }
+    
+    [self.frameworks addObjectsFromArray:other.frameworks.allObjects];
+    [self.weakLinkedFrameworks addObjectsFromArray:other.weakLinkedFrameworks.allObjects];
+    [self.otherLibraries addObjectsFromArray:other.otherLibraries.allObjects];
 }
 
 #pragma mark Private Methods

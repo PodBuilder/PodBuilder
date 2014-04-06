@@ -32,4 +32,6 @@
 - (NSDictionary *)configurationDictionary;
 - (NSString *)configurationFileSource;
 
+- (void)mergeConfiguration:(XcodeConfigurationFile *)other;
+
 @end
