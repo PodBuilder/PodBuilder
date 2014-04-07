@@ -18,7 +18,7 @@
 		1F4A9BF918F0B4FC00852EC5 /* NSArray+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BF818F0B4FC00852EC5 /* NSArray+MapFoldReduce.m */; };
 		1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BFB18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m */; };
 		1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */; };
-		1FC694B618F08AEA005D77B1 /* XcodeConfigurationFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC694B518F08AEA005D77B1 /* XcodeConfigurationFile.m */; };
+		1FC694B618F08AEA005D77B1 /* XCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC694B518F08AEA005D77B1 /* XCConfiguration.m */; };
 		1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */; };
 		301277ECC79A45D29200F822 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0263141DD54F04A2346783 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -48,8 +48,8 @@
 		1F5BD7A418F220EF008C06F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		1F85372E18F1CEAF00E408DD /* XcodeProjectConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeProjectConstants.h; sourceTree = "<group>"; };
 		1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeProjectConstants.m; sourceTree = "<group>"; };
-		1FC694B418F08AEA005D77B1 /* XcodeConfigurationFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeConfigurationFile.h; sourceTree = "<group>"; };
-		1FC694B518F08AEA005D77B1 /* XcodeConfigurationFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeConfigurationFile.m; sourceTree = "<group>"; };
+		1FC694B418F08AEA005D77B1 /* XCConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCConfiguration.h; sourceTree = "<group>"; };
+		1FC694B518F08AEA005D77B1 /* XCConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCConfiguration.m; sourceTree = "<group>"; };
 		1FF44CCF18EF516C007172AA /* PodDocumentWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodDocumentWindowController.h; sourceTree = "<group>"; };
 		1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodDocumentWindowController.m; sourceTree = "<group>"; };
 		2DE01F2FD0E54051A328745B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -157,8 +157,8 @@
 		1FC694B318F08AA9005D77B1 /* XcodeProject */ = {
 			isa = PBXGroup;
 			children = (
-				1FC694B418F08AEA005D77B1 /* XcodeConfigurationFile.h */,
-				1FC694B518F08AEA005D77B1 /* XcodeConfigurationFile.m */,
+				1FC694B418F08AEA005D77B1 /* XCConfiguration.h */,
+				1FC694B518F08AEA005D77B1 /* XCConfiguration.m */,
 				1F85372E18F1CEAF00E408DD /* XcodeProjectConstants.h */,
 				1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */,
 			);
@@ -302,7 +302,7 @@
 				1F311CC418F0D34C0055413A /* NSString+ShellSplit.m in Sources */,
 				1F0EBAFA18EF40A000C62194 /* PodDocument.m in Sources */,
 				1F0EBAF318EF40A000C62194 /* main.m in Sources */,
-				1FC694B618F08AEA005D77B1 /* XcodeConfigurationFile.m in Sources */,
+				1FC694B618F08AEA005D77B1 /* XCConfiguration.m in Sources */,
 				1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
