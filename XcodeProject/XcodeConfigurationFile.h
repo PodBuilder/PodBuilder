@@ -34,6 +34,8 @@
 - (id)initByParsingData:(NSData *)data;
 /// Creates an instance of \c XcodeConfigurationFile containing settings obtained from reading from the given URL.
 - (id)initByReadingURL:(NSURL *)location;
+/// Creates an instance of \c XcodeConfigurationFile containing settings obtained from the given dictionary.
+/// \param settings A dictionary in the format of the dictionary returned by the \c configurationDictionary method.
 - (id)initWithConfigurationDictionary:(NSDictionary *)settings;
 
 #pragma mark Properties
