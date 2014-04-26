@@ -4,3 +4,4 @@ link_with 'PodBuilder'
 
 pod 'CocoaOniguruma@wjk', :git => 'https://github.com/wjk/cocoaoniguruma.git'
 pod 'InflectorKit'
+pod 'XcodeEditor'
