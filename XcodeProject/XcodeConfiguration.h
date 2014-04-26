@@ -22,7 +22,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XCConfiguration : NSObject <NSCopying>
+@interface XcodeConfiguration : NSObject <NSCopying>
 
 /// Creates an instance of \c XCConfiguration containing no settings.
 /// \remarks This is a designated initializer.
@@ -49,6 +49,6 @@
 - (NSDictionary *)configurationDictionary;
 - (NSString *)configurationFileSource;
 
-- (void)mergeConfiguration:(XCConfiguration *)other;
+- (void)mergeConfiguration:(XcodeConfiguration *)other;
 
 @end

@@ -20,12 +20,12 @@
  * THE SOFTWARE.
  */
 
-#import "XCConfiguration.h"
+#import "XcodeConfiguration.h"
 #import "NSDictionary+MapFoldReduce.h"
 #import "NSArray+MapFoldReduce.h"
 #import "NSString+ShellSplit.h"
 
-@implementation XCConfiguration
+@implementation XcodeConfiguration
 
 - (id)init {
     self = [super init];
@@ -165,7 +165,7 @@
     return [lines componentsJoinedByString:@"\n"];
 }
 
-- (void)mergeConfiguration:(XCConfiguration *)other {
+- (void)mergeConfiguration:(XcodeConfiguration *)other {
     for (NSString *key in other.attributes.allKeys) {
         NSString *oldValue = [self.attributes[key] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         NSString *newValue = [other.attributes[key] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -246,7 +246,7 @@
     if (self == object) return YES;
     if (![object isKindOfClass:[self class]]) return NO;
     
-    XCConfiguration *other = object;
+    XcodeConfiguration *other = object;
     return ([self.attributes isEqual:other.attributes] &&
             [self.frameworks isEqual:other.frameworks] &&
             [self.weakLinkedFrameworks isEqual:other.frameworks] &&
