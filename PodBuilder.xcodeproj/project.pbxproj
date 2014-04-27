@@ -20,7 +20,6 @@
 		1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */; };
 		1F90A914190D7FC10008F79C /* XCObjectIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */; };
 		1F90A91A190D84360008F79C /* XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A919190D84360008F79C /* XCProject.m */; };
-		1F90A91D190D84990008F79C /* XCProject+XCBuildFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A91C190D84990008F79C /* XCProject+XCBuildFile.m */; };
 		1FB8ED28190D9BE000A68981 /* XCObjectRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */; };
 		1FB8ED2B190D9BFF00A68981 /* XCResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED2A190D9BFF00A68981 /* XCResource.m */; };
 		1FC694B618F08AEA005D77B1 /* XcodeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC694B518F08AEA005D77B1 /* XcodeConfiguration.m */; };
@@ -58,8 +57,6 @@
 		1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCObjectIdentifier.m; sourceTree = "<group>"; };
 		1F90A918190D84360008F79C /* XCProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCProject.h; sourceTree = "<group>"; };
 		1F90A919190D84360008F79C /* XCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCProject.m; sourceTree = "<group>"; };
-		1F90A91B190D84990008F79C /* XCProject+XCBuildFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCProject+XCBuildFile.h"; sourceTree = "<group>"; };
-		1F90A91C190D84990008F79C /* XCProject+XCBuildFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCProject+XCBuildFile.m"; sourceTree = "<group>"; };
 		1FB8ED26190D9BE000A68981 /* XCObjectRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCObjectRegistry.h; sourceTree = "<group>"; };
 		1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCObjectRegistry.m; sourceTree = "<group>"; };
 		1FB8ED29190D9BFF00A68981 /* XCResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCResource.h; sourceTree = "<group>"; };
@@ -181,8 +178,6 @@
 				1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */,
 				1F90A918190D84360008F79C /* XCProject.h */,
 				1F90A919190D84360008F79C /* XCProject.m */,
-				1F90A91B190D84990008F79C /* XCProject+XCBuildFile.h */,
-				1F90A91C190D84990008F79C /* XCProject+XCBuildFile.m */,
 				1FB8ED29190D9BFF00A68981 /* XCResource.h */,
 				1FB8ED2A190D9BFF00A68981 /* XCResource.m */,
 			);
@@ -333,7 +328,6 @@
 			files = (
 				1F90A91A190D84360008F79C /* XCProject.m in Sources */,
 				1F4A9BF918F0B4FC00852EC5 /* NSArray+MapFoldReduce.m in Sources */,
-				1F90A91D190D84990008F79C /* XCProject+XCBuildFile.m in Sources */,
 				1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */,
 				1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */,
 				1FB8ED2B190D9BFF00A68981 /* XCResource.m in Sources */,
