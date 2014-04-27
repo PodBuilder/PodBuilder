@@ -21,6 +21,8 @@
 		1F90A914190D7FC10008F79C /* XCObjectIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */; };
 		1F90A91A190D84360008F79C /* XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A919190D84360008F79C /* XCProject.m */; };
 		1F90A91D190D84990008F79C /* XCProject+XCBuildFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A91C190D84990008F79C /* XCProject+XCBuildFile.m */; };
+		1FB8ED28190D9BE000A68981 /* XCObjectRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */; };
+		1FB8ED2B190D9BFF00A68981 /* XCResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED2A190D9BFF00A68981 /* XCResource.m */; };
 		1FC694B618F08AEA005D77B1 /* XcodeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC694B518F08AEA005D77B1 /* XcodeConfiguration.m */; };
 		1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */; };
 		301277ECC79A45D29200F822 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0263141DD54F04A2346783 /* libPods.a */; };
@@ -58,6 +60,10 @@
 		1F90A919190D84360008F79C /* XCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCProject.m; sourceTree = "<group>"; };
 		1F90A91B190D84990008F79C /* XCProject+XCBuildFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XCProject+XCBuildFile.h"; sourceTree = "<group>"; };
 		1F90A91C190D84990008F79C /* XCProject+XCBuildFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCProject+XCBuildFile.m"; sourceTree = "<group>"; };
+		1FB8ED26190D9BE000A68981 /* XCObjectRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCObjectRegistry.h; sourceTree = "<group>"; };
+		1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCObjectRegistry.m; sourceTree = "<group>"; };
+		1FB8ED29190D9BFF00A68981 /* XCResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCResource.h; sourceTree = "<group>"; };
+		1FB8ED2A190D9BFF00A68981 /* XCResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCResource.m; sourceTree = "<group>"; };
 		1FC694B418F08AEA005D77B1 /* XcodeConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeConfiguration.h; sourceTree = "<group>"; };
 		1FC694B518F08AEA005D77B1 /* XcodeConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeConfiguration.m; sourceTree = "<group>"; };
 		1FF44CCF18EF516C007172AA /* PodDocumentWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodDocumentWindowController.h; sourceTree = "<group>"; };
@@ -171,10 +177,14 @@
 				1F90A911190D7F6A0008F79C /* LICENSE.txt */,
 				1F90A912190D7FC10008F79C /* XCObjectIdentifier.h */,
 				1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */,
+				1FB8ED26190D9BE000A68981 /* XCObjectRegistry.h */,
+				1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */,
 				1F90A918190D84360008F79C /* XCProject.h */,
 				1F90A919190D84360008F79C /* XCProject.m */,
 				1F90A91B190D84990008F79C /* XCProject+XCBuildFile.h */,
 				1F90A91C190D84990008F79C /* XCProject+XCBuildFile.m */,
+				1FB8ED29190D9BFF00A68981 /* XCResource.h */,
+				1FB8ED2A190D9BFF00A68981 /* XCResource.m */,
 			);
 			path = XcodeKit;
 			sourceTree = "<group>";
@@ -326,9 +336,11 @@
 				1F90A91D190D84990008F79C /* XCProject+XCBuildFile.m in Sources */,
 				1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */,
 				1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */,
+				1FB8ED2B190D9BFF00A68981 /* XCResource.m in Sources */,
 				1F311CC418F0D34C0055413A /* NSString+ShellSplit.m in Sources */,
 				1F90A914190D7FC10008F79C /* XCObjectIdentifier.m in Sources */,
 				1F0EBAFA18EF40A000C62194 /* PodDocument.m in Sources */,
+				1FB8ED28190D9BE000A68981 /* XCObjectRegistry.m in Sources */,
 				1F0EBAF318EF40A000C62194 /* main.m in Sources */,
 				1FC694B618F08AEA005D77B1 /* XcodeConfiguration.m in Sources */,
 				1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */,
