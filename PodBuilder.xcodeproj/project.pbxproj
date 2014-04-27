@@ -19,6 +19,7 @@
 		1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BFB18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m */; };
 		1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */; };
 		1F90A914190D7FC10008F79C /* XCObjectIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */; };
+		1F90A91A190D84360008F79C /* XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A919190D84360008F79C /* XCProject.m */; };
 		1FC694B618F08AEA005D77B1 /* XcodeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC694B518F08AEA005D77B1 /* XcodeConfiguration.m */; };
 		1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */; };
 		301277ECC79A45D29200F822 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0263141DD54F04A2346783 /* libPods.a */; };
@@ -52,6 +53,8 @@
 		1F90A911190D7F6A0008F79C /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		1F90A912190D7FC10008F79C /* XCObjectIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCObjectIdentifier.h; sourceTree = "<group>"; };
 		1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCObjectIdentifier.m; sourceTree = "<group>"; };
+		1F90A918190D84360008F79C /* XCProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCProject.h; sourceTree = "<group>"; };
+		1F90A919190D84360008F79C /* XCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCProject.m; sourceTree = "<group>"; };
 		1FC694B418F08AEA005D77B1 /* XcodeConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeConfiguration.h; sourceTree = "<group>"; };
 		1FC694B518F08AEA005D77B1 /* XcodeConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeConfiguration.m; sourceTree = "<group>"; };
 		1FF44CCF18EF516C007172AA /* PodDocumentWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodDocumentWindowController.h; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				1F90A911190D7F6A0008F79C /* LICENSE.txt */,
 				1F90A912190D7FC10008F79C /* XCObjectIdentifier.h */,
 				1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */,
+				1F90A918190D84360008F79C /* XCProject.h */,
+				1F90A919190D84360008F79C /* XCProject.m */,
 			);
 			path = XcodeKit;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F90A91A190D84360008F79C /* XCProject.m in Sources */,
 				1F4A9BF918F0B4FC00852EC5 /* NSArray+MapFoldReduce.m in Sources */,
 				1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */,
 				1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */,
