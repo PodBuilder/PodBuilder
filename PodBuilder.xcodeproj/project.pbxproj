@@ -14,6 +14,9 @@
 		1F0EBAFD18EF40A000C62194 /* PodDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAFB18EF40A000C62194 /* PodDocument.xib */; };
 		1F0EBB0018EF40A000C62194 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAFE18EF40A000C62194 /* MainMenu.xib */; };
 		1F0EBB0218EF40A000C62194 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBB0118EF40A000C62194 /* Images.xcassets */; };
+		1F18AB17190EE592000F9A14 /* compile.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F18AB14190EE592000F9A14 /* compile.c */; };
+		1F18AB18190EE592000F9A14 /* leg.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F18AB15190EE592000F9A14 /* leg.c */; };
+		1F18AB19190EE592000F9A14 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F18AB16190EE592000F9A14 /* tree.c */; };
 		1F311CC418F0D34C0055413A /* NSString+ShellSplit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F311CC318F0D34C0055413A /* NSString+ShellSplit.m */; };
 		1F4A9BF918F0B4FC00852EC5 /* NSArray+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BF818F0B4FC00852EC5 /* NSArray+MapFoldReduce.m */; };
 		1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BFB18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m */; };
@@ -44,6 +47,14 @@
 		1F0EBB0118EF40A000C62194 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F0EBB0818EF40A000C62194 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1F0EBB1D18EF41D100C62194 /* PodBuilder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PodBuilder.entitlements; sourceTree = "<group>"; };
+		1F18AB0B190EE584000F9A14 /* leg */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leg; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F18AB14190EE592000F9A14 /* compile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compile.c; sourceTree = "<group>"; };
+		1F18AB15190EE592000F9A14 /* leg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = leg.c; sourceTree = "<group>"; };
+		1F18AB16190EE592000F9A14 /* tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
+		1F18AB1A190EE5A5000F9A14 /* leg.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = leg.1; sourceTree = "<group>"; };
+		1F18AB1B190EE5AA000F9A14 /* leg.leg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = leg.leg; sourceTree = "<group>"; };
+		1F18AB1C190EE5AA000F9A14 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
+		1F18AB1D190EE5AA000F9A14 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		1F311CC218F0D34C0055413A /* NSString+ShellSplit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ShellSplit.h"; sourceTree = "<group>"; };
 		1F311CC318F0D34C0055413A /* NSString+ShellSplit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ShellSplit.m"; sourceTree = "<group>"; };
 		1F4A9BF718F0B4FC00852EC5 /* NSArray+MapFoldReduce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MapFoldReduce.h"; sourceTree = "<group>"; };
@@ -85,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F18AB08190EE584000F9A14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +122,7 @@
 				1FC694B318F08AA9005D77B1 /* XcodeProject */,
 				1F90A910190D7F560008F79C /* XcodeKit */,
 				1F4A9BF618F0B4CC00852EC5 /* Utility Categories */,
+				1F18AB0C190EE584000F9A14 /* leg */,
 				1F0EBAE518EF40A000C62194 /* Frameworks */,
 				1F0EBAE418EF40A000C62194 /* Products */,
 			);
@@ -113,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				1F0EBAE318EF40A000C62194 /* PodBuilder.app */,
+				1F18AB0B190EE584000F9A14 /* leg */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +179,20 @@
 				1F0EBAF418EF40A000C62194 /* PodBuilder-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F18AB0C190EE584000F9A14 /* leg */ = {
+			isa = PBXGroup;
+			children = (
+				1F18AB1A190EE5A5000F9A14 /* leg.1 */,
+				1F18AB1B190EE5AA000F9A14 /* leg.leg */,
+				1F18AB1C190EE5AA000F9A14 /* tree.h */,
+				1F18AB1D190EE5AA000F9A14 /* version.h */,
+				1F18AB14190EE592000F9A14 /* compile.c */,
+				1F18AB15190EE592000F9A14 /* leg.c */,
+				1F18AB16190EE592000F9A14 /* tree.c */,
+			);
+			path = leg;
 			sourceTree = "<group>";
 		};
 		1F4A9BF618F0B4CC00852EC5 /* Utility Categories */ = {
@@ -255,6 +289,22 @@
 			productReference = 1F0EBAE318EF40A000C62194 /* PodBuilder.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1F18AB0A190EE584000F9A14 /* leg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F18AB11190EE584000F9A14 /* Build configuration list for PBXNativeTarget "leg" */;
+			buildPhases = (
+				1F18AB07190EE584000F9A14 /* Sources */,
+				1F18AB08190EE584000F9A14 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = leg;
+			productName = leg;
+			productReference = 1F18AB0B190EE584000F9A14 /* leg */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -288,6 +338,7 @@
 			projectRoot = "";
 			targets = (
 				1F0EBAE218EF40A000C62194 /* PodBuilder */,
+				1F18AB0A190EE584000F9A14 /* leg */,
 			);
 		};
 /* End PBXProject section */
@@ -358,6 +409,16 @@
 				1F0EBAF318EF40A000C62194 /* main.m in Sources */,
 				1FC694B618F08AEA005D77B1 /* XcodeConfiguration.m in Sources */,
 				1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F18AB07190EE584000F9A14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F18AB19190EE592000F9A14 /* tree.c in Sources */,
+				1F18AB18190EE592000F9A14 /* leg.c in Sources */,
+				1F18AB17190EE592000F9A14 /* compile.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +554,28 @@
 			};
 			name = Release;
 		};
+		1F18AB12190EE584000F9A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-unused-function";
+			};
+			name = Debug;
+		};
+		1F18AB13190EE584000F9A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-unused-function";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -513,6 +596,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1F18AB11190EE584000F9A14 /* Build configuration list for PBXNativeTarget "leg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F18AB12190EE584000F9A14 /* Debug */,
+				1F18AB13190EE584000F9A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
