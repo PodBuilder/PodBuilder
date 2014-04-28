@@ -1,3 +1,0 @@
-[submodule "vendor/greg"]
-	path = vendor/greg
-	url = git@github.com:wjk/greg.git
