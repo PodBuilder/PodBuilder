@@ -29,6 +29,7 @@
 		1FB8ED28190D9BE000A68981 /* XCObjectRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */; };
 		1FB8ED2B190D9BFF00A68981 /* XCResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED2A190D9BFF00A68981 /* XCResource.m */; };
 		1FB8ED34190DA18800A68981 /* XCFileReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED33190DA18800A68981 /* XCFileReference.m */; };
+		1FC1F03E191ED1D100B7659A /* XCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC1F03D191ED1D100B7659A /* XCConfiguration.m */; };
 		1FC694B618F08AEA005D77B1 /* XcodeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC694B518F08AEA005D77B1 /* XcodeConfiguration.m */; };
 		1FF0623F190DB95100CD1136 /* XCBuildFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0623E190DB95100CD1136 /* XCBuildFile.m */; };
 		1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */; };
@@ -108,6 +109,8 @@
 		1FB8ED2A190D9BFF00A68981 /* XCResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCResource.m; sourceTree = "<group>"; };
 		1FB8ED32190DA18800A68981 /* XCFileReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFileReference.h; sourceTree = "<group>"; };
 		1FB8ED33190DA18800A68981 /* XCFileReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFileReference.m; sourceTree = "<group>"; };
+		1FC1F03C191ED1D100B7659A /* XCConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCConfiguration.h; sourceTree = "<group>"; };
+		1FC1F03D191ED1D100B7659A /* XCConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCConfiguration.m; sourceTree = "<group>"; };
 		1FC694B418F08AEA005D77B1 /* XcodeConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeConfiguration.h; sourceTree = "<group>"; };
 		1FC694B518F08AEA005D77B1 /* XcodeConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeConfiguration.m; sourceTree = "<group>"; };
 		1FF0623D190DB95100CD1136 /* XCBuildFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBuildFile.h; sourceTree = "<group>"; };
@@ -277,6 +280,8 @@
 				1FF0623E190DB95100CD1136 /* XCBuildFile.m */,
 				1F06BDB9191EA2EB00497769 /* XCBuildPhase.h */,
 				1F06BDBA191EA2EB00497769 /* XCBuildPhase.m */,
+				1FC1F03C191ED1D100B7659A /* XCConfiguration.h */,
+				1FC1F03D191ED1D100B7659A /* XCConfiguration.m */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -443,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5AF481191E9F9B00109694 /* NSString+BackslashEscaping.m in Sources */,
+				1FC1F03E191ED1D100B7659A /* XCConfiguration.m in Sources */,
 				1F90BE00190EE77400B7F886 /* pbxproject.peg in Sources */,
 				1F90A91A190D84360008F79C /* XCProject.m in Sources */,
 				1F4A9BF918F0B4FC00852EC5 /* NSArray+MapFoldReduce.m in Sources */,
