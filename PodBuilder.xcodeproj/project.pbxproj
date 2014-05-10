@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F06BDBB191EA2EB00497769 /* XCBuildPhase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06BDBA191EA2EB00497769 /* XCBuildPhase.m */; };
 		1F0EBAE718EF40A000C62194 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0EBAE618EF40A000C62194 /* Cocoa.framework */; };
 		1F0EBAF118EF40A000C62194 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAEF18EF40A000C62194 /* InfoPlist.strings */; };
 		1F0EBAF318EF40A000C62194 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EBAF218EF40A000C62194 /* main.m */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F06BDB9191EA2EB00497769 /* XCBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBuildPhase.h; sourceTree = "<group>"; };
+		1F06BDBA191EA2EB00497769 /* XCBuildPhase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCBuildPhase.m; sourceTree = "<group>"; };
 		1F0EBAE318EF40A000C62194 /* PodBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0EBAE618EF40A000C62194 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1F0EBAE918EF40A000C62194 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -272,6 +275,8 @@
 				1FB8ED33190DA18800A68981 /* XCFileReference.m */,
 				1FF0623D190DB95100CD1136 /* XCBuildFile.h */,
 				1FF0623E190DB95100CD1136 /* XCBuildFile.m */,
+				1F06BDB9191EA2EB00497769 /* XCBuildPhase.h */,
+				1F06BDBA191EA2EB00497769 /* XCBuildPhase.m */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 				1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */,
 				1FB8ED34190DA18800A68981 /* XCFileReference.m in Sources */,
 				1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */,
+				1F06BDBB191EA2EB00497769 /* XCBuildPhase.m in Sources */,
 				1FB8ED2B190D9BFF00A68981 /* XCResource.m in Sources */,
 				1F311CC418F0D34C0055413A /* NSString+ShellSplit.m in Sources */,
 				1FF0623F190DB95100CD1136 /* XCBuildFile.m in Sources */,
