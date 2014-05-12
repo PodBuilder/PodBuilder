@@ -10,6 +10,9 @@
 
 @interface NSArray (MapFoldReduce)
 
+- (NSArray *)arrayWithObjectsPassingTest:(BOOL (^)(id object))block;
+- (NSArray *)arrayWithObjectsNotPassingTest:(BOOL (^)(id object))block;
+
 - (NSArray *)arrayByTranslatingValues:(id (^)(id oldValue))block;
 - (id)reduceWithInitialValue:(id)initialValue block:(void (^)(id reduced, id value))block;
 

@@ -10,6 +10,34 @@
 
 @implementation NSArray (MapFoldReduce)
 
+- (NSArray *)arrayWithObjectsPassingTest:(BOOL (^)(id object))block {
+    NSAssert(block != NULL, @"Block must not be NULL");
+    
+    NSInteger count = self.count;
+    NSMutableArray *retval = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < count; i++) {
+        id object = self[i];
+        if (block(object)) [retval addObject:object];
+    }
+    
+    return retval;
+}
+
+- (NSArray *)arrayWithObjectsNotPassingTest:(BOOL (^)(id object))block {
+    NSAssert(block != NULL, @"Block must not be NULL");
+    
+    NSInteger count = self.count;
+    NSMutableArray *retval = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < count; i++) {
+        id object = self[i];
+        if (!block(object)) [retval addObject:object];
+    }
+    
+    return retval;
+}
+
 - (NSArray *)arrayByTranslatingValues:(id (^)(id oldValue))block {
     NSAssert(block != NULL, @"Block must not be NULL");
     
