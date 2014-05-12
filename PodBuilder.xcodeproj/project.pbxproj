@@ -22,6 +22,7 @@
 		1F4A9BF918F0B4FC00852EC5 /* NSArray+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BF818F0B4FC00852EC5 /* NSArray+MapFoldReduce.m */; };
 		1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BFB18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m */; };
 		1F5AF481191E9F9B00109694 /* NSString+BackslashEscaping.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AF480191E9F9B00109694 /* NSString+BackslashEscaping.m */; };
+		1F71FAA51921587100293A24 /* XCConfigurationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71FAA41921587100293A24 /* XCConfigurationList.m */; };
 		1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */; };
 		1F90A914190D7FC10008F79C /* XCObjectIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */; };
 		1F90A91A190D84360008F79C /* XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A919190D84360008F79C /* XCProject.m */; };
@@ -96,6 +97,8 @@
 		1F5AF480191E9F9B00109694 /* NSString+BackslashEscaping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BackslashEscaping.m"; sourceTree = "<group>"; };
 		1F5BD7A318F220E4008C06F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PodDocument.xib; sourceTree = "<group>"; };
 		1F5BD7A418F220EF008C06F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1F71FAA31921587100293A24 /* XCConfigurationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCConfigurationList.h; sourceTree = "<group>"; };
+		1F71FAA41921587100293A24 /* XCConfigurationList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCConfigurationList.m; sourceTree = "<group>"; };
 		1F85372E18F1CEAF00E408DD /* XcodeProjectConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeProjectConstants.h; sourceTree = "<group>"; };
 		1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeProjectConstants.m; sourceTree = "<group>"; };
 		1F90A911190D7F6A0008F79C /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 				1F06BDBA191EA2EB00497769 /* XCBuildPhase.m */,
 				1FC1F03C191ED1D100B7659A /* XCConfiguration.h */,
 				1FC1F03D191ED1D100B7659A /* XCConfiguration.m */,
+				1F71FAA31921587100293A24 /* XCConfigurationList.h */,
+				1F71FAA41921587100293A24 /* XCConfigurationList.m */,
 				1FC1F03F191ED4F000B7659A /* XCStandardProperties.h */,
 				1FC1F040191ED4F000B7659A /* XCStandardProperties.m */,
 			);
@@ -471,6 +476,7 @@
 				1F0EBAF318EF40A000C62194 /* main.m in Sources */,
 				1FC694B618F08AEA005D77B1 /* XcodeConfiguration.m in Sources */,
 				1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */,
+				1F71FAA51921587100293A24 /* XCConfigurationList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
