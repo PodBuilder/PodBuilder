@@ -19,6 +19,7 @@
 		1F18AB18190EE592000F9A14 /* leg.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F18AB15190EE592000F9A14 /* leg.c */; };
 		1F18AB19190EE592000F9A14 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 1F18AB16190EE592000F9A14 /* tree.c */; };
 		1F311CC418F0D34C0055413A /* NSString+ShellSplit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F311CC318F0D34C0055413A /* NSString+ShellSplit.m */; };
+		1F3C3AFC1922CCB70091007D /* XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C3AFB1922CCB70091007D /* XCProject.m */; };
 		1F4A9BF918F0B4FC00852EC5 /* NSArray+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BF818F0B4FC00852EC5 /* NSArray+MapFoldReduce.m */; };
 		1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BFB18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m */; };
 		1F5AF481191E9F9B00109694 /* NSString+BackslashEscaping.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AF480191E9F9B00109694 /* NSString+BackslashEscaping.m */; };
@@ -90,6 +91,8 @@
 		1F18AB1D190EE5AA000F9A14 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
 		1F311CC218F0D34C0055413A /* NSString+ShellSplit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ShellSplit.h"; sourceTree = "<group>"; };
 		1F311CC318F0D34C0055413A /* NSString+ShellSplit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ShellSplit.m"; sourceTree = "<group>"; };
+		1F3C3AFA1922CCB70091007D /* XCProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCProject.h; sourceTree = "<group>"; };
+		1F3C3AFB1922CCB70091007D /* XCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCProject.m; sourceTree = "<group>"; };
 		1F4A9BF718F0B4FC00852EC5 /* NSArray+MapFoldReduce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MapFoldReduce.h"; sourceTree = "<group>"; };
 		1F4A9BF818F0B4FC00852EC5 /* NSArray+MapFoldReduce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MapFoldReduce.m"; sourceTree = "<group>"; };
 		1F4A9BFA18F0B65700852EC5 /* NSDictionary+MapFoldReduce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MapFoldReduce.h"; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 			children = (
 				1FB8ED29190D9BFF00A68981 /* XCResource.h */,
 				1FB8ED2A190D9BFF00A68981 /* XCResource.m */,
+				1F3C3AFA1922CCB70091007D /* XCProject.h */,
+				1F3C3AFB1922CCB70091007D /* XCProject.m */,
 				1FB8ED32190DA18800A68981 /* XCFileReference.h */,
 				1FB8ED33190DA18800A68981 /* XCFileReference.m */,
 				1FF0623D190DB95100CD1136 /* XCBuildFile.h */,
@@ -462,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F3C3AFC1922CCB70091007D /* XCProject.m in Sources */,
 				1F5AF481191E9F9B00109694 /* NSString+BackslashEscaping.m in Sources */,
 				1FC1F03E191ED1D100B7659A /* XCConfiguration.m in Sources */,
 				1F90BE00190EE77400B7F886 /* pbxproject.peg in Sources */,
