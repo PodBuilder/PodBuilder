@@ -26,7 +26,6 @@
 		1F71FAA819215CD000293A24 /* XCGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71FAA719215CD000293A24 /* XCGroup.m */; };
 		1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */; };
 		1F90A914190D7FC10008F79C /* XCObjectIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */; };
-		1F90A91A190D84360008F79C /* XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A919190D84360008F79C /* XCProject.m */; };
 		1F90BE00190EE77400B7F886 /* pbxproject.peg in Sources */ = {isa = PBXBuildFile; fileRef = 1F90BDFF190EE77100B7F886 /* pbxproject.peg */; };
 		1F90BE0F1922AE7C00C90629 /* XCTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90BE0E1922AE7C00C90629 /* XCTarget.m */; };
 		1FB8ED28190D9BE000A68981 /* XCObjectRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */; };
@@ -108,8 +107,6 @@
 		1F90A911190D7F6A0008F79C /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		1F90A912190D7FC10008F79C /* XCObjectIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCObjectIdentifier.h; sourceTree = "<group>"; };
 		1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCObjectIdentifier.m; sourceTree = "<group>"; };
-		1F90A918190D84360008F79C /* XCProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCProject.h; sourceTree = "<group>"; };
-		1F90A919190D84360008F79C /* XCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCProject.m; sourceTree = "<group>"; };
 		1F90BDFF190EE77100B7F886 /* pbxproject.peg */ = {isa = PBXFileReference; lastKnownFileType = text; path = pbxproject.peg; sourceTree = "<group>"; };
 		1F90BE0D1922AE7C00C90629 /* XCTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTarget.h; sourceTree = "<group>"; };
 		1F90BE0E1922AE7C00C90629 /* XCTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTarget.m; sourceTree = "<group>"; };
@@ -265,8 +262,6 @@
 				1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */,
 				1FB8ED26190D9BE000A68981 /* XCObjectRegistry.h */,
 				1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */,
-				1F90A918190D84360008F79C /* XCProject.h */,
-				1F90A919190D84360008F79C /* XCProject.m */,
 				1F90BDFE190EE76900B7F886 /* Parser */,
 				1FB8ED31190DA18100A68981 /* Resources */,
 			);
@@ -470,7 +465,6 @@
 				1F5AF481191E9F9B00109694 /* NSString+BackslashEscaping.m in Sources */,
 				1FC1F03E191ED1D100B7659A /* XCConfiguration.m in Sources */,
 				1F90BE00190EE77400B7F886 /* pbxproject.peg in Sources */,
-				1F90A91A190D84360008F79C /* XCProject.m in Sources */,
 				1F4A9BF918F0B4FC00852EC5 /* NSArray+MapFoldReduce.m in Sources */,
 				1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */,
 				1FB8ED34190DA18800A68981 /* XCFileReference.m in Sources */,
