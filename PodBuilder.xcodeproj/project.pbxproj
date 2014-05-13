@@ -28,6 +28,7 @@
 		1F90A914190D7FC10008F79C /* XCObjectIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A913190D7FC10008F79C /* XCObjectIdentifier.m */; };
 		1F90A91A190D84360008F79C /* XCProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90A919190D84360008F79C /* XCProject.m */; };
 		1F90BE00190EE77400B7F886 /* pbxproject.peg in Sources */ = {isa = PBXBuildFile; fileRef = 1F90BDFF190EE77100B7F886 /* pbxproject.peg */; };
+		1F90BE0F1922AE7C00C90629 /* XCTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90BE0E1922AE7C00C90629 /* XCTarget.m */; };
 		1FB8ED28190D9BE000A68981 /* XCObjectRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */; };
 		1FB8ED2B190D9BFF00A68981 /* XCResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED2A190D9BFF00A68981 /* XCResource.m */; };
 		1FB8ED34190DA18800A68981 /* XCFileReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8ED33190DA18800A68981 /* XCFileReference.m */; };
@@ -110,6 +111,8 @@
 		1F90A918190D84360008F79C /* XCProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCProject.h; sourceTree = "<group>"; };
 		1F90A919190D84360008F79C /* XCProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCProject.m; sourceTree = "<group>"; };
 		1F90BDFF190EE77100B7F886 /* pbxproject.peg */ = {isa = PBXFileReference; lastKnownFileType = text; path = pbxproject.peg; sourceTree = "<group>"; };
+		1F90BE0D1922AE7C00C90629 /* XCTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTarget.h; sourceTree = "<group>"; };
+		1F90BE0E1922AE7C00C90629 /* XCTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTarget.m; sourceTree = "<group>"; };
 		1FB8ED26190D9BE000A68981 /* XCObjectRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCObjectRegistry.h; sourceTree = "<group>"; };
 		1FB8ED27190D9BE000A68981 /* XCObjectRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCObjectRegistry.m; sourceTree = "<group>"; };
 		1FB8ED29190D9BFF00A68981 /* XCResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCResource.h; sourceTree = "<group>"; };
@@ -297,6 +300,8 @@
 				1FC1F040191ED4F000B7659A /* XCStandardProperties.m */,
 				1F71FAA619215CD000293A24 /* XCGroup.h */,
 				1F71FAA719215CD000293A24 /* XCGroup.m */,
+				1F90BE0D1922AE7C00C90629 /* XCTarget.h */,
+				1F90BE0E1922AE7C00C90629 /* XCTarget.m */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 				1F90A914190D7FC10008F79C /* XCObjectIdentifier.m in Sources */,
 				1FC1F041191ED4F000B7659A /* XCStandardProperties.m in Sources */,
 				1F71FAA819215CD000293A24 /* XCGroup.m in Sources */,
+				1F90BE0F1922AE7C00C90629 /* XCTarget.m in Sources */,
 				1F0EBAFA18EF40A000C62194 /* PodDocument.m in Sources */,
 				1FB8ED28190D9BE000A68981 /* XCObjectRegistry.m in Sources */,
 				1F0EBAF318EF40A000C62194 /* main.m in Sources */,
