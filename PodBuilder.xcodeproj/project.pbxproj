@@ -23,6 +23,7 @@
 		1F4A9BF918F0B4FC00852EC5 /* NSArray+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BF818F0B4FC00852EC5 /* NSArray+MapFoldReduce.m */; };
 		1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BFB18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m */; };
 		1F5AF481191E9F9B00109694 /* NSString+BackslashEscaping.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AF480191E9F9B00109694 /* NSString+BackslashEscaping.m */; };
+		1F6B10E91923F06D005B3F14 /* NSString+NSRepeatedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B10E81923F06D005B3F14 /* NSString+NSRepeatedString.m */; };
 		1F71FAA51921587100293A24 /* XCConfigurationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71FAA41921587100293A24 /* XCConfigurationList.m */; };
 		1F71FAA819215CD000293A24 /* XCGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F71FAA719215CD000293A24 /* XCGroup.m */; };
 		1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */; };
@@ -101,6 +102,8 @@
 		1F5AF480191E9F9B00109694 /* NSString+BackslashEscaping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BackslashEscaping.m"; sourceTree = "<group>"; };
 		1F5BD7A318F220E4008C06F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PodDocument.xib; sourceTree = "<group>"; };
 		1F5BD7A418F220EF008C06F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1F6B10E71923F06D005B3F14 /* NSString+NSRepeatedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSRepeatedString.h"; sourceTree = "<group>"; };
+		1F6B10E81923F06D005B3F14 /* NSString+NSRepeatedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSRepeatedString.m"; sourceTree = "<group>"; };
 		1F71FAA31921587100293A24 /* XCConfigurationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCConfigurationList.h; sourceTree = "<group>"; };
 		1F71FAA41921587100293A24 /* XCConfigurationList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCConfigurationList.m; sourceTree = "<group>"; };
 		1F71FAA619215CD000293A24 /* XCGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCGroup.h; sourceTree = "<group>"; };
@@ -253,6 +256,8 @@
 				1F311CC318F0D34C0055413A /* NSString+ShellSplit.m */,
 				1F5AF47F191E9F9B00109694 /* NSString+BackslashEscaping.h */,
 				1F5AF480191E9F9B00109694 /* NSString+BackslashEscaping.m */,
+				1F6B10E71923F06D005B3F14 /* NSString+NSRepeatedString.h */,
+				1F6B10E81923F06D005B3F14 /* NSString+NSRepeatedString.m */,
 			);
 			path = "Utility Categories";
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 				1F311CC418F0D34C0055413A /* NSString+ShellSplit.m in Sources */,
 				1FF0623F190DB95100CD1136 /* XCBuildFile.m in Sources */,
 				1F90A914190D7FC10008F79C /* XCObjectIdentifier.m in Sources */,
+				1F6B10E91923F06D005B3F14 /* NSString+NSRepeatedString.m in Sources */,
 				1FC1F041191ED4F000B7659A /* XCStandardProperties.m in Sources */,
 				1F71FAA819215CD000293A24 /* XCGroup.m in Sources */,
 				1F90BE0F1922AE7C00C90629 /* XCTarget.m in Sources */,
