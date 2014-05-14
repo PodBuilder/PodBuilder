@@ -1,0 +1,3 @@
+[submodule "XcodeKit"]
+	path = XcodeKit
+	url = git@github.com:PodBuilder/XcodeKit.git
