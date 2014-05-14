@@ -13,6 +13,7 @@
 - (NSString *)unescapedString {
     NSMutableString *retval = [self mutableCopy];
     
+    [retval replaceOccurrencesOfString:@"\\\\" withString:@"\\" options:0 range:NSMakeRange(0, retval.length)];
     [retval replaceOccurrencesOfString:@"\\\"" withString:@"\"" options:0 range:NSMakeRange(0, retval.length)];
     [retval replaceOccurrencesOfString:@"\\r" withString:@"\r" options:0 range:NSMakeRange(0, retval.length)];
     [retval replaceOccurrencesOfString:@"\\n" withString:@"\n" options:0 range:NSMakeRange(0, retval.length)];
@@ -26,6 +27,7 @@
 - (NSString *)escapedString {
     NSMutableString *retval = [self mutableCopy];
     
+    [retval replaceOccurrencesOfString:@"\\" withString:@"\\\\" options:0 range:NSMakeRange(0, retval.length)];
     [retval replaceOccurrencesOfString:@"\"" withString:@"\\\"" options:0 range:NSMakeRange(0, retval.length)];
     [retval replaceOccurrencesOfString:@"\r" withString:@"\\r" options:0 range:NSMakeRange(0, retval.length)];
     [retval replaceOccurrencesOfString:@"\n" withString:@"\\n" options:0 range:NSMakeRange(0, retval.length)];
