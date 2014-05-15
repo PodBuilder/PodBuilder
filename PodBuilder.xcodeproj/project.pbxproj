@@ -21,7 +21,6 @@
 		1F6B10E91923F06D005B3F14 /* NSString+NSRepeatedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B10E81923F06D005B3F14 /* NSString+NSRepeatedString.m */; };
 		1F85373018F1CEAF00E408DD /* XcodeProjectConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */; };
 		1FC694B618F08AEA005D77B1 /* XcodeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC694B518F08AEA005D77B1 /* XcodeConfiguration.m */; };
-		1FE4DC2C19242A6C001A4DC3 /* libXcodeKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE4DC2919242A64001A4DC3 /* libXcodeKit.a */; };
 		1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */; };
 		301277ECC79A45D29200F822 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0263141DD54F04A2346783 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -39,23 +38,6 @@
 			script = "\"${BUILT_PRODUCTS_DIR}/leg\" -o\"${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}.m\" \"${INPUT_FILE_PATH}\"";
 		};
 /* End PBXBuildRule section */
-
-/* Begin PBXContainerItemProxy section */
-		1FE4DC2819242A64001A4DC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1FE4DC2319242A64001A4DC3 /* XcodeKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1FFE18831924253100A5B42C;
-			remoteInfo = XcodeKit;
-		};
-		1FE4DC2A19242A64001A4DC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1FE4DC2319242A64001A4DC3 /* XcodeKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1FFE186D192424C200A5B42C;
-			remoteInfo = leg;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1F0EBAE318EF40A000C62194 /* PodBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +70,6 @@
 		1F85372F18F1CEAF00E408DD /* XcodeProjectConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeProjectConstants.m; sourceTree = "<group>"; };
 		1FC694B418F08AEA005D77B1 /* XcodeConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeConfiguration.h; sourceTree = "<group>"; };
 		1FC694B518F08AEA005D77B1 /* XcodeConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeConfiguration.m; sourceTree = "<group>"; };
-		1FE4DC2319242A64001A4DC3 /* XcodeKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeKit.xcodeproj; path = XcodeKit/XcodeKit.xcodeproj; sourceTree = "<group>"; };
 		1FF44CCF18EF516C007172AA /* PodDocumentWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodDocumentWindowController.h; sourceTree = "<group>"; };
 		1FF44CD018EF516C007172AA /* PodDocumentWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodDocumentWindowController.m; sourceTree = "<group>"; };
 		2DE01F2FD0E54051A328745B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -100,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FE4DC2C19242A6C001A4DC3 /* libXcodeKit.a in Frameworks */,
 				1F0EBAE718EF40A000C62194 /* Cocoa.framework in Frameworks */,
 				301277ECC79A45D29200F822 /* libPods.a in Frameworks */,
 			);
@@ -124,7 +104,6 @@
 				1F0EBAEC18EF40A000C62194 /* PodBuilder */,
 				1FC694B318F08AA9005D77B1 /* XcodeProject */,
 				1F4A9BF618F0B4CC00852EC5 /* Utility Categories */,
-				1FE4DC2219242A54001A4DC3 /* External Projects */,
 				1F0EBAE518EF40A000C62194 /* Frameworks */,
 				1F0EBAE418EF40A000C62194 /* Products */,
 			);
@@ -210,23 +189,6 @@
 			path = XcodeProject;
 			sourceTree = "<group>";
 		};
-		1FE4DC2219242A54001A4DC3 /* External Projects */ = {
-			isa = PBXGroup;
-			children = (
-				1FE4DC2319242A64001A4DC3 /* XcodeKit.xcodeproj */,
-			);
-			name = "External Projects";
-			sourceTree = "<group>";
-		};
-		1FE4DC2419242A64001A4DC3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1FE4DC2919242A64001A4DC3 /* libXcodeKit.a */,
-				1FE4DC2B19242A64001A4DC3 /* leg */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		1FF44CCE18EF5132007172AA /* Document */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,35 +262,12 @@
 			mainGroup = 1F0EBADA18EF40A000C62194;
 			productRefGroup = 1F0EBAE418EF40A000C62194 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 1FE4DC2419242A64001A4DC3 /* Products */;
-					ProjectRef = 1FE4DC2319242A64001A4DC3 /* XcodeKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1F0EBAE218EF40A000C62194 /* PodBuilder */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		1FE4DC2919242A64001A4DC3 /* libXcodeKit.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libXcodeKit.a;
-			remoteRef = 1FE4DC2819242A64001A4DC3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1FE4DC2B19242A64001A4DC3 /* leg */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = leg;
-			remoteRef = 1FE4DC2A19242A64001A4DC3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1F0EBAE118EF40A000C62194 /* Resources */ = {
