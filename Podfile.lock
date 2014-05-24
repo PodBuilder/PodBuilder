@@ -1,0 +1,20 @@
+PODS:
+  - CocoaOniguruma@wjk (1.0.0)
+  - InflectorKit (0.0.1)
+  - XcodeKit (2.0.1)
+
+DEPENDENCIES:
+  - CocoaOniguruma@wjk (from `https://github.com/wjk/cocoaoniguruma.git`)
+  - InflectorKit
+  - XcodeKit (~> 2.0.0)
+
+EXTERNAL SOURCES:
+  CocoaOniguruma@wjk:
+    :git: https://github.com/wjk/cocoaoniguruma.git
+
+SPEC CHECKSUMS:
+  CocoaOniguruma@wjk: 16027d3ef43323fa5142022deca3dddcb4c1f887
+  InflectorKit: bb1f5c9feb01d17450b8bcdeb7ab1ef1832b2247
+  XcodeKit: 3c8750e508865f64aca4c48658e685810e2f8ebf
+
+COCOAPODS: 0.33.1
