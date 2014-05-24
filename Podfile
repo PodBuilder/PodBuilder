@@ -3,5 +3,5 @@ xcodeproj 'PodBuilder'
 link_with 'PodBuilder'
 
 pod 'CocoaOniguruma@wjk', :git => 'https://github.com/wjk/cocoaoniguruma.git'
-pod 'XcodeKit', :git => 'https://github.com/PodBuilder/XcodeKit.git'
+pod 'XcodeKit', '~> 2.0.0'
 pod 'InflectorKit'
