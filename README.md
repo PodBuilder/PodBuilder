@@ -1,5 +1,9 @@
 # PodBuilder
 
+**Please note that I have closed the source of PodBuilder for now.
+Further contributions will be done in a private repository.
+I reserve the right to re-open PodBuilder’s source at a later date.**
+
 PodBuilder is a lightweight Macintosh IDE targeted at the creation of libraries
 for the [CocoaPods](http://cocoapods.org/) library management system.
 
