@@ -90,13 +90,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DE1F0F6F8D80752DB4D7DE8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		174DFD75335FDAFE352BBCEF /* CocoaPods */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,7 +107,6 @@
 				1F4A9BF618F0B4CC00852EC5 /* Utility Categories */,
 				1F0EBAE518EF40A000C62194 /* Frameworks */,
 				1F0EBAE418EF40A000C62194 /* Products */,
-				0DE1F0F6F8D80752DB4D7DE8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
