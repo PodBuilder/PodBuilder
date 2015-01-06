@@ -12,9 +12,14 @@ EXTERNAL SOURCES:
   CocoaOniguruma@wjk:
     :git: https://github.com/wjk/cocoaoniguruma.git
 
+CHECKOUT OPTIONS:
+  CocoaOniguruma@wjk:
+    :commit: 9d0264222f574164584b9dd887abf04c95fa5cf8
+    :git: https://github.com/wjk/cocoaoniguruma.git
+
 SPEC CHECKSUMS:
-  CocoaOniguruma@wjk: 16027d3ef43323fa5142022deca3dddcb4c1f887
+  CocoaOniguruma@wjk: 3ee3014c681a0ee335b6448107061d7bb48580b3
   InflectorKit: bb1f5c9feb01d17450b8bcdeb7ab1ef1832b2247
   XcodeKit: 3c8750e508865f64aca4c48658e685810e2f8ebf
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.36.0.beta.1
