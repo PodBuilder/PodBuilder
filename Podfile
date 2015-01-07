@@ -6,3 +6,4 @@ use_frameworks!
 
 pod 'XcodeKit', '~> 2.0.0'
 pod 'SwiftDataHash', '~> 1.0.0'
+pod 'XcodeConfiguration', '~> 2.0.0'
