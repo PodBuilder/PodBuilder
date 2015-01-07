@@ -16,6 +16,7 @@
 		1F0EBB0018EF40A000C62194 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAFE18EF40A000C62194 /* MainMenu.xib */; };
 		1F0EBB0218EF40A000C62194 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBB0118EF40A000C62194 /* Images.xcassets */; };
 		1F311CC418F0D34C0055413A /* NSString+ShellSplit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F311CC318F0D34C0055413A /* NSString+ShellSplit.m */; };
+		1F44B3A01A5CB91000CB8571 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F44B39F1A5CB91000CB8571 /* test.swift */; };
 		1F4A9BF918F0B4FC00852EC5 /* NSArray+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BF818F0B4FC00852EC5 /* NSArray+MapFoldReduce.m */; };
 		1F4A9BFC18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A9BFB18F0B65700852EC5 /* NSDictionary+MapFoldReduce.m */; };
 		1F5AF481191E9F9B00109694 /* NSString+BackslashEscaping.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5AF480191E9F9B00109694 /* NSString+BackslashEscaping.m */; };
@@ -57,6 +58,8 @@
 		1F0EBB1D18EF41D100C62194 /* PodBuilder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PodBuilder.entitlements; sourceTree = "<group>"; };
 		1F311CC218F0D34C0055413A /* NSString+ShellSplit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ShellSplit.h"; sourceTree = "<group>"; };
 		1F311CC318F0D34C0055413A /* NSString+ShellSplit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ShellSplit.m"; sourceTree = "<group>"; };
+		1F44B39E1A5CB90F00CB8571 /* PodBuilder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PodBuilder-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F44B39F1A5CB91000CB8571 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		1F4A9BF718F0B4FC00852EC5 /* NSArray+MapFoldReduce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MapFoldReduce.h"; sourceTree = "<group>"; };
 		1F4A9BF818F0B4FC00852EC5 /* NSArray+MapFoldReduce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MapFoldReduce.m"; sourceTree = "<group>"; };
 		1F4A9BFA18F0B65700852EC5 /* NSDictionary+MapFoldReduce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MapFoldReduce.h"; sourceTree = "<group>"; };
@@ -153,6 +156,7 @@
 		1F0EBAED18EF40A000C62194 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1F44B39E1A5CB90F00CB8571 /* PodBuilder-Bridging-Header.h */,
 				1F0EBB1D18EF41D100C62194 /* PodBuilder.entitlements */,
 				1F0EBB0118EF40A000C62194 /* Images.xcassets */,
 				1F0EBAEE18EF40A000C62194 /* PodBuilder-Info.plist */,
@@ -207,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				1F0EBAFE18EF40A000C62194 /* MainMenu.xib */,
+				1F44B39F1A5CB91000CB8571 /* test.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				1F0EBAF318EF40A000C62194 /* main.m in Sources */,
 				1FC694B618F08AEA005D77B1 /* XcodeConfiguration.m in Sources */,
 				1FF44CD218EF516C007172AA /* PodDocumentWindowController.m in Sources */,
+				1F44B3A01A5CB91000CB8571 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +465,7 @@
 			baseConfigurationReference = 0E6EDD8EA7240D25F6239800 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGNING_REQUIRED = YES;
 				CODE_SIGN_ENTITLEMENTS = PodBuilder/PodBuilder.entitlements;
 				CODE_SIGN_IDENTITY = "-";
@@ -466,8 +473,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PodBuilder/PodBuilder-Prefix.pch";
 				INFOPLIST_FILE = "PodBuilder/PodBuilder-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PodBuilder/PodBuilder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -477,6 +487,7 @@
 			baseConfigurationReference = A1B1213BE530E0B28145E964 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGNING_REQUIRED = YES;
 				CODE_SIGN_ENTITLEMENTS = PodBuilder/PodBuilder.entitlements;
 				CODE_SIGN_IDENTITY = "-";
@@ -484,8 +495,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PodBuilder/PodBuilder-Prefix.pch";
 				INFOPLIST_FILE = "PodBuilder/PodBuilder-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PodBuilder/PodBuilder-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,11 +1,13 @@
 PODS:
   - CocoaOniguruma@wjk (1.0.0)
   - InflectorKit (0.0.1)
+  - SwiftDataHash (1.0.0)
   - XcodeKit (2.0.1)
 
 DEPENDENCIES:
   - CocoaOniguruma@wjk (from `https://github.com/wjk/cocoaoniguruma.git`)
   - InflectorKit
+  - SwiftDataHash (~> 1.0.0)
   - XcodeKit (~> 2.0.0)
 
 EXTERNAL SOURCES:
@@ -20,6 +22,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   CocoaOniguruma@wjk: 3ee3014c681a0ee335b6448107061d7bb48580b3
   InflectorKit: bb1f5c9feb01d17450b8bcdeb7ab1ef1832b2247
+  SwiftDataHash: c328e2238327ddb9c99333e0530b505f30fa66a0
   XcodeKit: 3c8750e508865f64aca4c48658e685810e2f8ebf
 
 COCOAPODS: 0.36.0.beta.1
