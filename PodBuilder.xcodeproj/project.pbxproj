@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0272253386C27FECC701B288 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15F6212590CC48368FDA733 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0272253386C27FECC701B288 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15F6212590CC48368FDA733 /* Pods.framework */; };
 		1F0EBAE718EF40A000C62194 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0EBAE618EF40A000C62194 /* Cocoa.framework */; };
 		1F0EBAF118EF40A000C62194 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F0EBAEF18EF40A000C62194 /* InfoPlist.strings */; };
 		1F0EBAF318EF40A000C62194 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EBAF218EF40A000C62194 /* main.m */; };
@@ -43,9 +43,6 @@
 		0E6EDD8EA7240D25F6239800 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1F0EBAE318EF40A000C62194 /* PodBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0EBAE618EF40A000C62194 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		1F0EBAE918EF40A000C62194 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		1F0EBAEA18EF40A000C62194 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		1F0EBAEB18EF40A000C62194 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F0EBAEE18EF40A000C62194 /* PodBuilder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PodBuilder-Info.plist"; sourceTree = "<group>"; };
 		1F0EBAF018EF40A000C62194 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F0EBAF218EF40A000C62194 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,7 +50,6 @@
 		1F0EBAF818EF40A000C62194 /* PodDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodDocument.h; sourceTree = "<group>"; };
 		1F0EBAF918EF40A000C62194 /* PodDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodDocument.m; sourceTree = "<group>"; };
 		1F0EBB0118EF40A000C62194 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1F0EBB0818EF40A000C62194 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1F0EBB1D18EF41D100C62194 /* PodBuilder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PodBuilder.entitlements; sourceTree = "<group>"; };
 		1F311CC218F0D34C0055413A /* NSString+ShellSplit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ShellSplit.h"; sourceTree = "<group>"; };
 		1F311CC318F0D34C0055413A /* NSString+ShellSplit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ShellSplit.m"; sourceTree = "<group>"; };
@@ -93,6 +89,7 @@
 		174DFD75335FDAFE352BBCEF /* CocoaPods */ = {
 			isa = PBXGroup;
 			children = (
+				C15F6212590CC48368FDA733 /* Pods.framework */,
 				0E6EDD8EA7240D25F6239800 /* Pods.debug.xcconfig */,
 				A1B1213BE530E0B28145E964 /* Pods.release.xcconfig */,
 			);
@@ -122,22 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				1F0EBAE618EF40A000C62194 /* Cocoa.framework */,
-				1F0EBB0818EF40A000C62194 /* XCTest.framework */,
-				1F0EBAE818EF40A000C62194 /* Other Frameworks */,
 				174DFD75335FDAFE352BBCEF /* CocoaPods */,
-				C15F6212590CC48368FDA733 /* Pods.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1F0EBAE818EF40A000C62194 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1F0EBAE918EF40A000C62194 /* AppKit.framework */,
-				1F0EBAEA18EF40A000C62194 /* CoreData.framework */,
-				1F0EBAEB18EF40A000C62194 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		1F0EBAEC18EF40A000C62194 /* PodBuilder */ = {
@@ -242,7 +226,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Pod;
-				LastUpgradeCheck = 0510;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "William Kent";
 				TargetAttributes = {
 					1F0EBAE218EF40A000C62194 = {
@@ -399,6 +384,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -469,6 +455,7 @@
 				INFOPLIST_FILE = "PodBuilder/PodBuilder-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wjksun.podbuilder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PodBuilder/PodBuilder-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -491,6 +478,7 @@
 				INFOPLIST_FILE = "PodBuilder/PodBuilder-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = org.wjksun.podbuilder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PodBuilder/PodBuilder-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
