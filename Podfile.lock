@@ -1,19 +1,28 @@
 PODS:
   - NSString+ShellSplit (1.0.0)
   - SwiftDataHash (1.0.0)
+  - Xcode.swift (1.0.0)
   - XcodeConfiguration (2.0.0):
     - NSString+ShellSplit (~> 1.0)
-  - XcodeKit (2.0.1)
 
 DEPENDENCIES:
   - SwiftDataHash (~> 1.0.0)
+  - Xcode.swift (from `https://github.com/PodBuilder/Xcode.swift`)
   - XcodeConfiguration (~> 2.0.0)
-  - XcodeKit (~> 2.0.0)
+
+EXTERNAL SOURCES:
+  Xcode.swift:
+    :git: https://github.com/PodBuilder/Xcode.swift
+
+CHECKOUT OPTIONS:
+  Xcode.swift:
+    :commit: 1c0cd9744e3d6cb5749d83a9844db59aa2254824
+    :git: https://github.com/PodBuilder/Xcode.swift
 
 SPEC CHECKSUMS:
   NSString+ShellSplit: fdb3df891ba3d98e1acc1b050ce7fd0d032324a9
   SwiftDataHash: b7f8c08cb29c9405db5974850d06a4dd02590b6d
+  Xcode.swift: 1c4aba2177abc1a0df4d7ff5f9930874320cf078
   XcodeConfiguration: c36097c45c206df763d847089d0f0299b45fe291
-  XcodeKit: 0f6025747d0e1d1ba08c41d26c7f536446e7ee71
 
 COCOAPODS: 0.39.0
